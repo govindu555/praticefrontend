@@ -1,0 +1,29 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+}
+
+.main2{
+  background-color: rgb(240, 239, 239);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  text-align: center;
+}
+.form{
+  position:sticky;
+  top: 0px;
+  background-color:azure;
+  border-style:solid;
+  border-radius: 20px;
+  width: 250px;
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.text{
+  font-size: 20px;
+}
