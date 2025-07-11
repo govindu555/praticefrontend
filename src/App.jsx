@@ -15,7 +15,7 @@ function App() {
   },[count])
 
   async function second(){
-    let a=await axios.get('https://praticebackend.onrender.com/getusers')
+    let a=await axios.get('http://localhost:4002/getusers')
     setUsers(a.data)
     setCount(count+1)
   }
@@ -24,7 +24,7 @@ function App() {
   async function first(e){
     e.preventDefault();
     
-      await axios.post("https://praticebackend.onrender.com/postdata",data)
+      await axios.post("http://localhost:4002/postdata",data)
       setData({name:"",email:""})
   }
 
@@ -34,7 +34,7 @@ function App() {
    }
 
    async function fundelete(id){
-          await axios.delete("https://praticebackend.onrender.com/delete/"+id)
+          await axios.delete("http://localhost:4002/delete/"+id)
    }
 
   return (
